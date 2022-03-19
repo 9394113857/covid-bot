@@ -19,7 +19,7 @@ def bot():
     msg = resp.message()
     responded = False
 
-    if 'Hi' in incoming_msg or 'Hey' in incoming_msg or 'Heya' in incoming_msg or 'Menu' in incoming_msg:
+    if 'hi' in incoming_msg or 'Hi' in incoming_msg or 'hey' in incoming_msg or 'Hey' in incoming_msg or 'Heya' in incoming_msg or 'Menu' in incoming_msg or 'menu' in incoming_msg:
         text = f'Hello 🙋🏽‍♂, \nThis is a Covid-Bot developed by Raghu Barlapudi from Innovius to provide latest information updates i.e cases in different countries and create awareness to help you and your family stay safe.\n For any emergency 👇 \n 📞 Helpline: 011-23978046 | Toll-Free Number: 1075 \n ✉ Email: ncov2019@gov.in \n\n Please enter one of the following option 👇 \n *A*. Covid-19 statistics *Worldwide*. \n *B*. Covid-19 cases in *India*. \n *C*. Covid-19 cases in *China*. \n *D*. Covid-19 cases in *USA*. \n *E*. Coronavirus cases in *Italy*. \n *F*. How does it *Spread*? \n *G*. *Preventive measures* to be taken.'
         msg.body(text)
         responded = True
